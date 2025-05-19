@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    // ECMAScript target version
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    // Include browser and DOM type definitions
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode settings */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    // React JSX support
+    "jsx": "react-jsx",
+
+    /* Type checking settings */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    /* React specific settings */
+    "types": ["react", "react-dom"]
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
